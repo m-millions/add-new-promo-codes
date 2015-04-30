@@ -131,7 +131,7 @@ WAYS TO IMPROVE ON THIS CODE
 
 (2) Add Logging to log file
 
-(3) Add data validation where appropriate, and including start and end dates /
+(3) Add data validation where appropriate, and including start and end dates
     ( e. g. end date should not be *before* start date, etc... )
 
 (4) Improve on exception and error handling
