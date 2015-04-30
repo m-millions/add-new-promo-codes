@@ -41,7 +41,7 @@ Where:
     05 = month for the end of the promotion
     14 = day for the end of the promotion
 
-sample mongodb output to the console:
+The out-put for this usecase will look like this:
 
     { "promotion_id" : 888,
     "discount_code" : "4kf0Z7Yf",
