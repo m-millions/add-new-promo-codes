@@ -40,11 +40,11 @@ sample mongodb output to the console:
 
 KNOWN BUGS
 ----------
-Entering this:
+Entering this at the command line:
 
     node add-new-promocodes.js 1 777 0 2015 07 01 2015 07 14
 
-Produces the following output with errors in the ISODATE:
+Produces the following out-put with errors in the ISODATE, where July (7) is converted to August (8):
 
     { "promocode" : "VJgbdecz",
       "promotion_id" : 777,
