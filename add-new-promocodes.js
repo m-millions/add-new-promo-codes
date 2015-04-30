@@ -53,7 +53,7 @@ var num_codes = parseInt(process.argv.slice(2)),
 // Remove persistance to the console at will
 console.log ('Successfully created and set PromoCode variables.');
 
-/// Create Promocode Schema
+// Create Promocode Schema
 var promocodeSchema = new mongoose.Schema({
     promocode: String,
     promotion_id: Number,
@@ -67,11 +67,10 @@ var promocodeSchema = new mongoose.Schema({
 // Remove persistance to the console at will
 console.log ('Successfully created promocodeSchema.');
 
-//This funciton creates and saves the new PromoCode to the Mongodb
-//collection: promocodes
+// This funciton creates and saves the new PromoCode to the Mongodb
+// collection: promocodes
 function addNewPromoCode(newPromoCode, promocodesi){
-    // Instanciate an instance of the promocodeModel
-    // and add a new promo code to the mongo collection
+    // Instanciate a promocodeModel
     var newPromoCode = new PromoCode({
         promocode: promocodesi, promotion_id: promotion_id,
         start: start, end: end, unlimited: unlimited,
