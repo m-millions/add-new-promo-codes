@@ -30,7 +30,8 @@ OPERATING INSTRUCTIONS
 
     node add-discount-codes.js 1 511 0 2015 05 01 2015 05 14
 
-(4) interact with mongo at the command line to verity new discount codes have been added to the
+(4) interact with mongo at the command line to verify that the new discount codes
+have been successfully added to the promocode collection
 
 
 WHAT the CODE DOES
