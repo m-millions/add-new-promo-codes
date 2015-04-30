@@ -59,9 +59,25 @@ Produces the following output with errors in the ISODATE:
 
 Manipulate variables thusly, in order to get around this Nodejs bug:
 
+    // Handles the conversion of the START DATE for the Promotion
+    start_year = parseInt(process.argv.slice(5)),
     start_month = parseInt(process.argv.slice(6)),
-    // handles bug in conversion because month gets set to +1 in the future
+    // handles bug in Nodejs date conversion because month get sets to +1 in the
+    // future - detailed in full in README.md
+    // TODO: Test code against iojs to see if bug persists
     start_month = start_month - 1
+    start_day = parseInt(process.argv.slice(7)),
+    start = new Date(start_year, start_month, start_day)
+    // Handles the conversion of the END DATE for the Promotion
+    end_year = parseInt(process.argv.slice(8)),
+    end_month = parseInt(process.argv.slice(9)),
+    // handles bug in JS date conversion because month get set to +1 in the
+    // future - detailed in full in README.md
+    end_month = end_month - 1
+    end_day = parseInt(process.argv.slice(10)),
+    end = new Date(end_year, end_month, end_day)
+
+This yields the following results when storing to the collection:
 
     { "promocode" : "Vknuul5f",
       "promotion_id" : 777,
