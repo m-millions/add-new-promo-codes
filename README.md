@@ -1,25 +1,35 @@
 CONFIGURATION INSTRUCTIONS
 --------------------------
 ubuntu
+
 MacOSX
-short-id
-mongoose
-Nodejs
+
 mongodb
+
+Nodejs
+
+short-id
+
+mongoose
 
 
 INSTALLATION INSTRUCTIONS
 -------------------------
 clone/download this project
+
 install all project dependencies
 
 
 OPERATING INSTRUCTIONS
 ----------------------
 (1) install and start mongod server
+
 (2) launch mongo command line client
+
 (3) run script  with appropriate parameter at the command line, like so:
+
     node add-discount-codes.js 1 511 0 2015 05 01 2015 05 14
+
 (4) interact with mongo at the command line to verity new discount codes have been added to the
 
 
@@ -31,15 +41,15 @@ Run the script at the command line with these trailing paramaters:
 
 Where:
 
-    2 = number of new codes to be generated
-    888 = id for the promotion where the new codes will be used against
-    0 = boolean of 1 or zero - shows if code has already been consumed (i.e. re-deemed)
-    2015 = year for the start of the promotion
-    05 = month for the start of the promotion
-    01 = day for the start of the promotion
-    2015 = year for the end of the promotion
-    05 = month for the end of the promotion
-    14 = day for the end of the promotion
+    2 - is number of new codes to be generated
+    888 - is the id for the promotion where the new codes will be used against
+    0 - is a boolean flag of 1 or zero - shows if code has already been consumed (i.e. re-deemed)
+    2015 - is the year for the start of the promotion
+    05 - is the month for the start of the promotion
+    01 - is the day for the start of the promotion
+    2015 - is the year for the end of the promotion
+    05 - is the month for the end of the promotion
+    14 - is the day for the end of the promotion
 
 The out-put for this usecase will look like this:
 
