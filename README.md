@@ -147,8 +147,10 @@ Use and extend at will - credit the author.
 TROUBLESHOOTING
 ---------------
 console-level messaging for the app.
+
 Standard admin-level troubleshooting for Mongodb and dependencies on Ubuntu and MacOSX.
-Dependencies include: Mongooose, Short-id ( not to be confused with Mongoose-shortid )
+
+Dependencies include: Mongooose, Short-id
 
 
 CREDITS and ACKNOWLEDGEMENTS
