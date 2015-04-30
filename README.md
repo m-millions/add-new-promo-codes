@@ -128,10 +128,14 @@ Application was tested and successfully worked on on Ubuntu and MacOSX.
 WAYS TO IMPROVE ON THIS CODE
 ----------------------------
 (1) Remove console-level messaging
+
 (2) Add Logging to log file
+
 (3) Add data validation where appropriate, and including start and end dates /
     ( e. g. end date should not be *before* start date, etc... )
+
 (4) Improve on exception and error handling
+
 (5) Incorporate as part of a larger project and include a client side app that displays/cosumes the contents of the collection
 
 
