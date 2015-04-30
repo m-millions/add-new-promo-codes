@@ -51,6 +51,7 @@ var num_codes = parseInt(process.argv.slice(2)),
     unlimited = parseInt(process.argv.slice(4)),
     updated = new Date(),
     created = new Date(),
+    //TODO: Changed consumption variable to a boolean
     consumed = 0;
 // Remove persistance to the console at will
 console.log ('Successfully created and set PromoCode variables.');
