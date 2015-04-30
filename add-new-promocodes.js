@@ -33,14 +33,16 @@ var num_codes = parseInt(process.argv.slice(2)),
     /* ... */
     start_year = parseInt(process.argv.slice(5)),
     start_month = parseInt(process.argv.slice(6)),
-    // handles bug in conversion because month get set to +1 in the future
+    // handles bug in JS date conversion because month get sets to +1 in the
+    // future - detailed in full in README.md
     start_month = start_month - 1
     start_day = parseInt(process.argv.slice(7)),
     start = new Date(start_year, start_month, start_day)
     /* ... */
     end_year = parseInt(process.argv.slice(8)),
     end_month = parseInt(process.argv.slice(9)),
-    // handles bug in conversion because month get set to +1 in the future
+    // handles bug in JS date conversion because month get set to +1 in the
+    // future - detailed in full in README.md
     end_month = end_month - 1
     end_day = parseInt(process.argv.slice(10)),
     end = new Date(end_year, end_month, end_day)
@@ -50,7 +52,6 @@ var num_codes = parseInt(process.argv.slice(2)),
     consumed = 0;
 // Remove persistance to the console at will
 console.log ('Successfully created and set PromoCode variables.');
-
 
 /// Create Promocode Schema
 var promocodeSchema = new mongoose.Schema({
