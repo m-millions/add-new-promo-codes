@@ -81,7 +81,9 @@ function addNewPromoCode(newPromoCode, promocodesi){
     });
     // Remove persistance to the console at will
     console.log ('Successfully created newPromoCode.');
-    //Save newPromoCode to the database
+    // Save newPromoCode to the database
+    // TODO: Throw/Catch additional exceptions/erros and write
+    // them to a log file
     newPromoCode.save(function(err) {
         if (err) {
         console.log ('Error on save!' + err);
