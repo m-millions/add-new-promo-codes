@@ -93,6 +93,7 @@ var PromoCode = mongoose.model('PromoCodes', promocodeSchema);
 // Remove persistance to the console at will
 console.log ('Successfully created PromoCode.');
 // Iterated through the number of promocodes to be created
+// Creates one unique PromoCode per earch iteration
 for (var i = 0; i < num_codes; i++){
     var promocodesi = ShortId.generate();
     addNewPromoCode(PromoCode, promocodesi);
