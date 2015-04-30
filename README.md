@@ -25,7 +25,7 @@ OPERATING INSTRUCTIONS
 
 WHAT the CODE DOES
 ------------------
-With run paramaters:
+Run the script at the command line with these trailing paramaters:
 
     node add-discount-codes.js 3 888 0 2015 05 01 2015 05 14
 
