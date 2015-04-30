@@ -48,8 +48,8 @@ var num_codes = parseInt(process.argv.slice(2)),
     end_day = parseInt(process.argv.slice(10)),
     end = new Date(end_year, end_month, end_day)
     unlimited = parseInt(process.argv.slice(4)),
-    updated_at = new Date(),
-    created_at = new Date(),
+    updated = new Date(),
+    created = new Date(),
     consumed = 0;
 // Remove persistance to the console at will
 console.log ('Successfully created and set PromoCode variables.');
