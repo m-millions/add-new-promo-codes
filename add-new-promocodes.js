@@ -61,8 +61,8 @@ var promocodeSchema = new mongoose.Schema({
     start: Date,
     end: Date,
     unlimited: Number,
-    created_at: Date,
-    updated_at: Date,
+    created: Date,
+    updated: Date,
     consumed: Number
 });
 // Remove persistance to the console at will
@@ -75,7 +75,7 @@ function addNewPromoCode(newPromoCode, promocodesi){
     var newPromoCode = new PromoCode({
         promocode: promocodesi, promotion_id: promotion_id,
         start: start, end: end, unlimited: unlimited,
-        updated_at: updated_at, created_at: created_at,
+        updated: updated, created: created,
         consumed: consumed
     });
     // Remove persistance to the console at will
