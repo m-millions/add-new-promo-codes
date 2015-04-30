@@ -27,15 +27,41 @@ WHAT the CODE DOES
 ------------------
 Run the script at the command line with these trailing paramaters:
 
-    node add-new-promocodes.js 3 888 0 2015 05 01 2015 05 14
+    node add-new-promocodes.js 2 888 0 2015 05 01 2015 05 14
+
+Where:
+
+    2 = number of new codes to be generated
+    888 = id for the promotion where the new codes will be used against
+    0 = boolean of 1 or zero - shows if code has already been consumed (i.e. re-deemed)
+    2015 = year for the start of the promotion
+    05 = month for the start of the promotion
+    01 = day for the start of the promotion
+    2015 = year for the end of the promotion
+    05 = month for the end of the promotion
+    14 = day for the end of the promotion
 
 sample mongodb output to the console:
 
-    { "promotion_id" : 888, "discount_code" : "4kf0Z7Yf", "promotion_start" : ISODate("2015-05-01T01:24:01.794Z", "promotion_end" : ISODate("2015-05-31T01:24:01.794Z", "used" : 0, "unlimited" : 0, "updated" : ISODate("2015-04-29T01:24:01.794Z"), "created" : ISODate("2015-04-29T01:24:01.794Z"), "_id" : ObjectId("554032b10107bae76682acb1"), "__v" : 0 }
+    { "promotion_id" : 888,
+    "discount_code" : "4kf0Z7Yf",
+    "promotion_start" : ISODate("2015-05-01T01:24:01.794Z",
+    "promotion_end" : ISODate("2015-05-31T01:24:01.794Z",
+    "used" : 0, "unlimited" : 0,
+    "updated" : ISODate("2015-04-29T01:24:01.794Z"),
+    "created" : ISODate("2015-04-29T01:24:01.794Z"),
+    "_id" : ObjectId("554032b10107bae76682acb1"),
+    "__v" : 0 }
 
-    { "promotion_id" : 888, "discount_code" : "4ylzCWXFz", "promotion_start" : ISODate("2015-05-01T01:24:01.794Z", "promotion_end" : ISODate("2015-05-31T01:24:01.794Z", "used" : 0, "unlimited" : 0, "updated" : ISODate("2015-04-29T01:24:01.794Z"), "created" : ISODate("2015-04-29T01:24:01.794Z"), "_id" : ObjectId("554032b10107bae76682acb1"), "__v" : 0 }
-
-    { "promotion_id" : 888, "discount_code" : "NkZzAbmtz", "promotion_start" : ISODate("2015-05-01T01:24:01.794Z", "promotion_end" : ISODate("2015-05-31T01:24:01.794Z", "used" : 0, "unlimited" : 0, "updated" : ISODate("2015-04-29T01:24:01.794Z"), "created" : ISODate("2015-04-29T01:24:01.794Z"), "_id" : ObjectId("554032b10107bae76682acb1"), "__v" : 0 }
+    { "promotion_id" : 888,
+    "discount_code" : "4ylzCWXFz",
+    "promotion_start" : ISODate("2015-05-01T01:24:01.794Z",
+    "promotion_end" : ISODate("2015-05-31T01:24:01.794Z",
+    "used" : 0, "unlimited" : 0,
+    "updated" : ISODate("2015-04-29T01:24:01.794Z"),
+    "created" : ISODate("2015-04-29T01:24:01.794Z"),
+    "_id" : ObjectId("554032b10107bae76682acb1"),
+    "__v" : 0 }
 
 
 KNOWN BUGS
