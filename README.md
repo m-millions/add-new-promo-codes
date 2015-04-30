@@ -46,15 +46,33 @@ Entering this:
 
 Produces the following output with errors in the ISODATE:
 
-    { "promocode" : "VJgbdecz", "promotion_id" : 777, "start" : ISODate("2015-08-01T04:00:00Z"), "end" : ISODate("2015-08-14T04:00:00Z"), "unlimited" : 0, "updated_at" : ISODate("2015-04-29T16:37:51.946Z"), "created_at" : ISODate("2015-04-29T16:37:51.946Z"), "consumed" : 0, "_id" : ObjectId("554108dfd7d9da3874340e41"), "__v" : 0 }
+    { "promocode" : "VJgbdecz",
+      "promotion_id" : 777,
+      "start" : ISODate("2015-08-01T04:00:00Z"),
+      "end" : ISODate("2015-08-14T04:00:00Z"),
+      "unlimited" : 0,
+      "updated_at" : ISODate("2015-04-29T16:37:51.946Z"),
+      "created_at" : ISODate("2015-04-29T16:37:51.946Z"),
+      "consumed" : 0,
+      "_id" : ObjectId("554108dfd7d9da3874340e41"),
+      "__v" : 0 }
 
-Manipulate variables thusly, in order to get around this JS bug:
+Manipulate variables thusly, in order to get around this Nodejs bug:
 
     start_month = parseInt(process.argv.slice(6)),
     // handles bug in conversion because month gets set to +1 in the future
     start_month = start_month - 1
 
-    { "promocode" : "Vknuul5f", "promotion_id" : 777, "start" : ISODate("2015-07-01T04:00:00Z"), "end" : ISODate("2015-07-14T04:00:00Z"), "unlimited" : 0, "updated_at" : ISODate("2015-04-29T16:39:55.700Z"), "created_at" : ISODate("2015-04-29T16:39:55.700Z"), "consumed" : 0, "_id" : ObjectId("5541095b7596bd527492b8a2"), "__v" : 0 }
+    { "promocode" : "Vknuul5f",
+      "promotion_id" : 777,
+      "start" : ISODate("2015-07-01T04:00:00Z"),
+      "end" : ISODate("2015-07-14T04:00:00Z"),
+      "unlimited" : 0,
+      "updated_at" : ISODate("2015-04-29T16:39:55.700Z"),
+      "created_at" : ISODate("2015-04-29T16:39:55.700Z"),
+      "consumed" : 0,
+      "_id" : ObjectId("5541095b7596bd527492b8a2"),
+      "__v" : 0 }
 
 
 TESTING METHODOLOGY
