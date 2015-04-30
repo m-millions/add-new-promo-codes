@@ -1,6 +1,6 @@
 {
-	"name": "test-promo-codes",
-	"main": "test_promo_codes.js",
+	"name": "add-new-promocodes",
+	"main": "add-new-promocodes.js",
 	"dependencies": {
 		"mongoose": "latest",
     	"shortid": "latest",
