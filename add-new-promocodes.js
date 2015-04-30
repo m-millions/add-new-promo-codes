@@ -67,7 +67,8 @@ var promocodeSchema = new mongoose.Schema({
 // Remove persistance to the console at will
 console.log ('Successfully created promocodeSchema.');
 
-//This funciton actually creates and saves the new PromoCode
+//This funciton creates and saves the new PromoCode to the Mongodb
+//collection: promocodes
 function addNewPromoCode(newPromoCode, promocodesi){
     // Instanciate an instance of the promocodeModel
     // and add a new promo code to the mongo collection
@@ -92,7 +93,7 @@ function addNewPromoCode(newPromoCode, promocodesi){
 var PromoCode = mongoose.model('PromoCodes', promocodeSchema);
 // Remove persistance to the console at will
 console.log ('Successfully created PromoCode.');
-// Iterated through the number of promocodes to be created
+// Iterate through the number of promocodes to be created
 // Creates one unique PromoCode per earch iteration
 for (var i = 0; i < num_codes; i++){
     var promocodesi = ShortId.generate();
