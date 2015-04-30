@@ -171,6 +171,8 @@ CREDITS and ACKNOWLEDGEMENTS
     www.google.com
     https://www.npmjs.com/package/mongoose
     https://www.npmjs.com/package/short-id
+    http://www.giantflyingsaucer.com/ - Chad Lung, who continues to be an incredible mentor
+    on all things tech and I am forever grateful.
 
 
 CHANGE LOG
