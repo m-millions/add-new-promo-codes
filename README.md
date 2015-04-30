@@ -16,19 +16,20 @@ install all project dependencies
 
 OPERATING INSTRUCTIONS
 ----------------------
-install and start mongod server
-launch mongo command line client
-run script  with appropriate parameter at the command line <<< node add-discount-codes.js 1 511 0 2015 05 01 2015 05 14
-interact with mongo at the command line to verity new discount codes have been added to the
+(1) install and start mongod server
+(2) launch mongo command line client
+(3) run script  with appropriate parameter at the command line, like so:
+    node add-discount-codes.js 1 511 0 2015 05 01 2015 05 14
+(4) interact with mongo at the command line to verity new discount codes have been added to the
 
 
 WHAT the CODE DOES
 ------------------
 With run paramaters:
 
-    node add-new-discountcodes.js num_codes promotion_id start end unlimited
+    node add-discount-codes.js 1 511 0 2015 05 01 2015 05 14
 
-sample mongodb output at the command line:
+sample mongodb output to the console:
 
     { "promotion_id" : 888, "discount_code" : "4kf0Z7Yf", "promotion_start" : ISODate("2015-05-01T01:24:01.794Z", "promotion_end" : ISODate("2015-05-31T01:24:01.794Z", "used" : 0, "unlimited" : 0, "updated" : ISODate("2015-04-29T01:24:01.794Z"), "created" : ISODate("2015-04-29T01:24:01.794Z"), "_id" : ObjectId("554032b10107bae76682acb1"), "__v" : 0 }
 
@@ -88,9 +89,9 @@ Dependencies include: Mongooose, Short-id ( not to be confused with Mongoose-sho
 
 CREDITS and ACKNOWLEDGEMENTS
 ----------------------------
-www.google.com
-https://www.npmjs.com/package/mongoose
-https://www.npmjs.com/package/short-id
+    www.google.com
+    https://www.npmjs.com/package/mongoose
+    https://www.npmjs.com/package/short-id
 
 
 CHANGE LOG
