@@ -1,0 +1,9 @@
+{
+	"name": "test-promo-codes",
+	"main": "test_promo_codes.js",
+	"dependencies": {
+		"mongoose": "latest",
+    	"shortid": "latest",
+        "mongodb": "*"
+	}
+}
