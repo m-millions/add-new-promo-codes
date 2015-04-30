@@ -41,6 +41,7 @@ sample mongodb output to the console:
 KNOWN BUGS
 ----------
 Entering this:
+
     node add-discount-codes.js 1 777 0 2015 07 01 2015 07 14
 
 Produces the following output with errors in the ISODATE:
