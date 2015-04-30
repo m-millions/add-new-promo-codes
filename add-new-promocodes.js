@@ -34,8 +34,9 @@ var num_codes = parseInt(process.argv.slice(2)),
     // Handles the conversion of the START DATE for the Promotion
     start_year = parseInt(process.argv.slice(5)),
     start_month = parseInt(process.argv.slice(6)),
-    // handles bug in JS date conversion because month get sets to +1 in the
+    // handles bug in Nodejs date conversion because month get sets to +1 in the
     // future - detailed in full in README.md
+    // TODO: Test code against iojs to see if bug persists
     start_month = start_month - 1
     start_day = parseInt(process.argv.slice(7)),
     start = new Date(start_year, start_month, start_day)
