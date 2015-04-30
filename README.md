@@ -42,7 +42,7 @@ Run the script at the command line with these trailing paramaters:
 
 Where:
 
-    2 - is number of unique codes to be generated
+    2 - is the number of unique codes to be generated
     888 - is the id for the promotion where the new codes will be used against
     0 - is a boolean flag of 1 or zero - shows if code has already been consumed (i.e. re-deemed)
     2015 - is the year for the start of the promotion
