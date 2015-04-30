@@ -7,8 +7,8 @@
 */
 if (process.argv.length != 11){
     console.log("usage: node add-promo-codes.js num_codes \
-                        promotion_id start_year start_month start_day \
-                        end_year end_month end_day unlimited");
+                        promotion_id unlimited start_year start_month \
+                        start_day end_year end_month end_day");
     return;
 }
 
