@@ -2,8 +2,9 @@
   To run the script type, in the directory where teh app lives, type the
   following: node add-promo-codes.js 1 511 0 2015 05 01 2015 05 14
   - where "2015 05 01 2015 05 14" represents start and end dates.
-  If promotion code is set with leading zeros it will truncate to the next whole
-  number <<< entering '007' at command prompt, yeilds '7' in code
+  If promotion code is set with leading zeros it will truncate at the position
+  of the nearest whole number > 0 <<< entering '007' at command prompt,
+  yeilds '7' in code
 */
 if (process.argv.length != 11){
     console.log("usage: node add-promo-codes.js num_codes \
