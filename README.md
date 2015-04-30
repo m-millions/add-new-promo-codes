@@ -120,8 +120,10 @@ This yields the following results when storing to the collection:
 TESTING METHODOLOGY
 -------------------
 A stand-alone, server side script, made to run from the command line, or scheduled
-via a job scheduler ( e.g. Cron )
+via a job scheduler ( e.g. Cron ).
+
 Modify at-will to make it require-able/call-able by another program.
+
 Application was tested and successfully worked on on Ubuntu and MacOSX.
 
 
