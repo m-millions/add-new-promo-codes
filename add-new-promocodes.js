@@ -30,7 +30,7 @@ mongoose.connect(uristring, function (err, res) {
 // collection
 var num_codes = parseInt(process.argv.slice(2)),
     promotion_id = parseInt(process.argv.slice(3)),
-    /* ... */
+    // Handles the conversion of the START DATE for the Promotion
     start_year = parseInt(process.argv.slice(5)),
     start_month = parseInt(process.argv.slice(6)),
     // handles bug in JS date conversion because month get sets to +1 in the
@@ -38,7 +38,7 @@ var num_codes = parseInt(process.argv.slice(2)),
     start_month = start_month - 1
     start_day = parseInt(process.argv.slice(7)),
     start = new Date(start_year, start_month, start_day)
-    /* ... */
+    // Handles the conversion of the END DATE for the Promotion
     end_year = parseInt(process.argv.slice(8)),
     end_month = parseInt(process.argv.slice(9)),
     // handles bug in JS date conversion because month get set to +1 in the
