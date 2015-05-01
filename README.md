@@ -1,7 +1,7 @@
 CONFIGURATION INSTRUCTIONS
 --------------------------
 
-    AWSEC2 Micro instance runnning Ubuntu version: 14.04 Build 13F34
+    AWSEC2 Micro instance running Ubuntu version: 14.04 Build 13F34
 
     MacOSX version: 10.9.2
 
