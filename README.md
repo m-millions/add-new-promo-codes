@@ -1,16 +1,17 @@
 CONFIGURATION INSTRUCTIONS
 --------------------------
-ubuntu
 
-MacOSX
+    AWSEC2 Micro instance runnning Ubuntu version: 14.04 Build 13F34
 
-mongodb
+    MacOSX version: 10.9.2
 
-Nodejs
+    MongoDB shell version: 2.4.8
 
-short-id
+    Mongoose MongoDB ODM version: 4.0.2
 
-mongoose
+    Nodejs version: 0.12.2
+
+    Shortid version: 2.2.2
 
 
 INSTALLATION INSTRUCTIONS
