@@ -1,18 +1,16 @@
 
 WHAT the CODE DOES
 ------------------
-The script generates new, unique promotion codes and inserts them into a MongoDB
+This is a stand-alone, server side script, made to run from the command line,
+or scheduled via a job scheduler ( e.g. Cron ).
+
+It generates new, unique promotion codes and inserts them into a MongoDB
 collection: promocodes.
 
 
 CONFIGURATION INSTRUCTIONS
 --------------------------
-This is a stand-alone, server side script, made to run from the command line,
-or scheduled via a job scheduler ( e.g. Cron ).
-
-Modify at-will to make it require-able/call-able by another program.
-
-This script was created and tested with the following stack(s):
+This script was created and tested against following stack(s):
 
     Amazon EC2 Micro instance running Ubuntu version: 14.04 Build 13F34
 
@@ -144,12 +142,12 @@ WAYS TO IMPROVE ON THIS CODE
 ----------------------------
 (1) Remove all console-level messaging
 
-(2) Add Logging to log file
+(2) Modify at-will to make it require-able/call-able by another program.
 
 (3) Add data validation where appropriate, and including start and end dates
     ( e. g. end date should not be *before* start date, etc... )
 
-(4) Improve on exception and error handling
+(4) Improve on exception/error handling; add Logging to log file
 
 (5) Incorporate as part of a larger project and include a client side app that
 displays/cosumes the contents of the collection
