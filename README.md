@@ -133,7 +133,8 @@ This yields the following results when storing to the collection:
 
 TESTING METHODOLOGY
 -------------------
-Application was tested successfully worked on on Ubuntu and MacOSX.
+Application was tested successfully worked on Ubuntu 14.04 Build 13F34 and
+Mac OS X.
 
 
 WAYS TO IMPROVE ON THIS CODE
