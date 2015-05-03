@@ -83,7 +83,7 @@ Entering this at the command line:
 
     node add-new-promocodes.js 1 777 0 2015 07 01 2015 07 14
 
-Produces the following out-put with errors in the ISODATE, where July (7) is
+Produces the following output with errors in the ISODATE, where July (7) is
 converted to August (8):
 
     { "promocode" : "VJgbdecz",
@@ -161,8 +161,8 @@ TROUBLESHOOTING
 ---------------
 Console-level messaging for the app.
 
-Standard admin-level troubleshooting for Mongodb and dependencies on Ubuntu and
-MacOSX.
+Standard admin-level troubleshooting for Mongodb and dependencies on
+Ubuntu 14.04 Build 13F34 and Mac OS X.
 
 
 CREDITS and ACKNOWLEDGEMENTS
