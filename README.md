@@ -53,8 +53,8 @@ Where:
     14 - is the day for the end of the promotion
 
 (4) interact with mongo at the command line to verify that the new codes
-have been successfully added to the promocode collection.  The out-put for this
-usecase will look like this:
+have been successfully added to the promocode collection.  The sample output
+for this usecase will look like this:
 
     { "promotion_id" : 888,
     "discount_code" : "4kf0Z7Yf",
