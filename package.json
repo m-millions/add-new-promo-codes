@@ -2,8 +2,8 @@
 	"name": "add-new-promocodes",
 	"main": "add-new-promocodes.js",
 	"dependencies": {
-		"mongoose": "latest",
-    	"shortid": "latest",
-        "mongodb": "*"
+		"mongoose": "4.0.2",
+    	"shortid": "2.2.2",
+        "mongodb": "2.4.8"
 	}
 }
