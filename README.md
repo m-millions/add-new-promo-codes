@@ -2,10 +2,8 @@
 WHAT the CODE DOES
 ------------------
 This is a stand-alone, server side script, made to run from the command line,
-or scheduled via a job scheduler ( e.g. Cron ).
-
-It generates new, unique promotion codes and inserts them into a MongoDB
-collection: promocodes.
+or scheduled via a job scheduler ( e.g. Cron ).  It generates new, unique
+promotion codes and inserts them into a MongoDB collection: promocodes.
 
 
 CONFIGURATION INSTRUCTIONS
