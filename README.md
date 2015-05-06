@@ -37,7 +37,7 @@ OPERATING INSTRUCTIONS
 
 (3) Run the script at the command line with these trailing paramaters:
 
-    node add-discount-codes.js 1 511 0 2015 05 01 2015 05 14
+    node add-discount-codes.js 1 511 0 2015 05 01 2015 05 31
 
 Where:
 
