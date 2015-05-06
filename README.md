@@ -50,7 +50,7 @@ Where:
     01 - is the day for the start of the promotion
     2015 - is the year for the end of the promotion
     05 - is the month for the end of the promotion
-    14 - is the day for the end of the promotion
+    31 - is the day for the end of the promotion
 
 (4) interact with mongo at the command line to verify that the new codes
 have been successfully added to the promocode collection.  The sample output
