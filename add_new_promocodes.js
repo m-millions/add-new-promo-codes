@@ -72,7 +72,7 @@ console.log ('Successfully created promocodeSchema.');
 
 // This funciton creates and saves the new PromoCode to the Mongodb
 // collection: promocodes
-function addNewPromoCode(newPromoCode, promocodesi){
+function addNewPromoCode(PromoCode, promocodesi){
     // Instanciate a promocodeModel
     var newPromoCode = new PromoCode({
         promocode: promocodesi, promotion_id: promotion_id,
